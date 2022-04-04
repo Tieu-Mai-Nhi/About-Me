@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 
+1. Vị trí
+2. Kích thước (width, height)
+3. Màu sắc
+4. Kiểu dáng, style, hình...
+*/
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+}
+
+#nav {
+    
+}
+
+#nav li {
+    display: inline-block;
+    
+}
+
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;  /* bằng chiều cao header để căn giữa */
+    padding: 0px 24px;
+}
+
+#nav li:hover a {
+    color :#000;
+    background-color: #fff;
+    display: inline-block;
+}
+
+#nav .subnav {
+    display: none;
+}
+
+#slider {
+
+}
+
+#content {
+
+}
+
+#footer {
+
+}
