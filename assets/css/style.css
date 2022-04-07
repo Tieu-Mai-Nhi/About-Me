@@ -21,34 +21,64 @@ html {
     background-color: #000;
 }
 
-#nav {
-    
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
 }
 
 #nav li {
-    display: inline-block;
-    
+    position: relative;
 }
 
 #nav li a {
-    color: #fff;
     text-decoration: none;
     line-height: 46px;  /* bằng chiều cao header để căn giữa */
     padding: 0px 24px;
+    display: block;
 }
 
-#nav li:hover a {
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav > li:hover > a {
+    background-color: #ccc;
     color :#000;
-    background-color: #fff;
     display: inline-block;
 }
 
+#nav li:hover .subnav {
+    display: block;
+}
+
 #nav .subnav {
+    position: absolute;
+    background-color: #fff;
     display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 120px;
+    top: 100%;
+}
+
+#nav .subnav a {
+    color: #000;
+    display: block;
+    padding: 0 12px;
+    line-height: 38px;
+    
+}
+
+#nav .subnav li:hover {
+    background-color: #ccc;
 }
 
 #slider {
-
+    min-height: 600px;
+    
 }
 
 #content {
