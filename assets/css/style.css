@@ -25,6 +25,10 @@ html {
     list-style-type: none;
 }
 
+#nav {
+    display: inline-block;
+}
+
 #nav > li {
     display: inline-block;
 }
@@ -67,7 +71,7 @@ html {
 #nav .subnav a {
     color: #000;
     display: block;
-    padding: 0 12px;
+    padding: 0 20px;
     line-height: 38px;
     
 }
@@ -75,6 +79,27 @@ html {
 #nav .subnav li:hover {
     background-color: #ccc;
 }
+
+#nav .nav-arrow-down {
+    font-size: 12px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    line-height: 46px;
+   
+}
+
+#header .search-btn:hover {
+    background-color: #f44336
+}
+
 
 #slider {
     min-height: 600px;
