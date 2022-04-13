@@ -10,7 +10,7 @@
 4. Kiểu dáng, style, hình...
 */
 html {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 #main {
@@ -116,30 +116,31 @@ html {
 
 
 #slider {
-    min-height: 600px;
     margin-top: 46px;
-    padding-top: 66.67%;
-    background: url('/assets/img/slider/slider1.png') top center / cover no-repeat ;
+    padding-top: 56.25332624%;
+    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat  ;
     position: relative;
 }
 
 
 #slider .text-content {
     position: absolute;
-    bottom: 10%;
+    top: 12%;
     color: #fff;
-    left: 70%;
-    font-size: xx-large;
+    right: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0.95;
 }
 
 #slider .text-heading {
-    font-weight: 500px;
-    font-size: 50px;
+    font-weight: 500;
+    font-size: 24px;
 }
 
 #slider .text-description {
-    font-size: xx-large;
-    margin-top: 25px;
+    font-size: 15px;
+    margin-top: 8px;
 }
 
 
@@ -179,13 +180,13 @@ html {
 }
 
 #content .members-list {
-    margin-top: 48px;
     text-align: center;
 }
 
 #content .member-item {
     float: left;
     width: calc(100%/3);
+    margin-top: 44px;
 }
 
 #content .member-name {
@@ -194,9 +195,16 @@ html {
 
 #content .member-img {
     margin-top: 15px;
+    margin-bottom: 24px;
     width: 252px;
+    height: 270px;
     border-radius: 4px;
 }
+
+#content .member-item2 {
+    margin-left: 16%;
+}
+
 
 /* TOur section */
 .tour-section {
