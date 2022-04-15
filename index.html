@@ -125,27 +125,27 @@
                             <img src="./assets/img/places/chelsea.jpg" alt="old trafford stadium" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Lon Don - England</h3>
-                                <p class="place-time">Sat 28 Oct 2022</p>
+                                <p class="place-time">Sat 28 Oct 2022 7:00 pm</p>
                                 <p class="place-desc">FC MaiToc & FC Chelsea</p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button class="place-buy-btn js-buy-tickets">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="place-item">
                             <img src="./assets/img/places/old traford.jpg" alt="old trafford stadium" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Manchester - England</h3>
-                                <p class="place-time">Fri 27 Sep 2022</p>
+                                <p class="place-time">Fri 27 Sep 2022 8:00 pm</p>
                                 <p class="place-desc">FC MaiToc & FC Man United</p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button class="place-buy-btn js-buy-tickets">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="place-item">
                             <img src="./assets/img/places/bernabeu.jpg" alt="old trafford stadium" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Madrid - Spain</h3>
-                                <p class="place-time">Sun 29  2022</p>
+                                <p class="place-time">Sun 29 Nov 2022 7:00 pm</p>
                                 <p class="place-desc">FC MaiToc & FC Real Madrid</p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button class="place-buy-btn js-buy-tickets">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -166,5 +166,74 @@
 
         </div>
     </div>
+
+    <!-- Model -->
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+
+            <header class="modal-header">
+                <i class="modal-heading-icon ti-ticket"></i>
+                Tickets
+            </header>
+
+            <div class="modal-body">
+                <label for="tickets-quantity" class="modal-label">
+                    <i class="modal-label-icon-shop ti-shopping-cart"></i>
+                    Tickets, $50 per person
+                </label>
+                <input id="tickets-quantity" type="text" class="modal-input" placeholder="How many?">
+           
+                <label for="tickets-email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send To
+                </label>
+                <input id="tickets-email" type="text" class="modal-input" placeholder="Enter email">
+
+                <!-- Button buy -->
+                <button id="buy-tickets">
+                    PAY <i class="ti-check"></i>
+                </button>
+            </div>
+
+            <div class="modal-footer">
+                <button class="modal-footer-close js-modal-close">Close <i class="ti-close"></i></button>
+                <p class="modal-help">Need <a href="">help?</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const buyBtns = document.getElementsByClassName('js-buy-tickets');
+        const modal = document.querySelector('.js-modal'); // querySelector not queryAllSelectors//
+        const modalsClose = document.querySelectorAll('.js-modal-close');
+        const modalContainer = document.querySelector('.js-modal-container'); //biến này để add vào sự kiện nổi bọt, nó nở ra đến container modal là hết
+        
+        // Hàm hiển thị modal mua vé (thêm class open của modal)
+        for (const buyBtn of buyBtns) {  // lặp qua từng thẻ button và nghe sự kiện click
+            buyBtn.onclick = function(){
+                modal.classList.add('open'); // click Buttons show Modal
+            }
+        };
+
+        // Hàm ân modal mua vé (gỡ bỏ class open của modal)
+        for (const modalClose of modalsClose) { // lặp qua từng thẻ có class close và nghe sự kiện click
+            modalClose.onclick = function(){
+                modal.classList.remove('open'); // click Close X hide modal
+            }
+        }
+
+        modal.onclick = function(){
+            modal.classList.remove('open'); // click ra ngoài modal sẽ hide modal. 
+                                           
+        }
+
+         // cần loại bỏ hiện tương bong bóng nổi bọt
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+    </script>
 </body>
 </html>
