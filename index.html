@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FC Mai Toc</title>
-    <link rel="icon" href="./assets/img/favicon/ball.jpg" type="image/x-icon"/>
+    <link rel="icon" href="./assets/img/favicon/favicon-ball.png" type="image/x-icon"/>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">  
+    <!-- viết sau thì ưu tiên hơn vì mới hơn -->
     <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -19,7 +21,8 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">More
+                    <a href="#">More 
+                        <!-- dấu # thể hiện trang web ở nguyên htai nên không load lại cả trang, nếu để trống thi load lại -->
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
@@ -32,11 +35,16 @@
         
         <!-- End Nav -->
 
-        <!-- Begin Search Button -->
+        <!-- Mobile menu button -->
+        <div class="mobile-menu-btn">
+            <i class="menu-icon ti-menu"></i>
+        </div>
+        
+        <!--  Search Button -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
             </div>
-        <!-- End Search Button -->
+
         </div>
         <div id="slider">
             <div class="text-content">
@@ -52,55 +60,55 @@
                 <p class="section-sub-heading">We are family</p>
                 <p class="about-text">FC MAI TOC là đội bóng gồm các anh em trong dòng họ Mai Tộc, thuộc xã Phong Châu, huyện Đông Hưng, tỉnh Thái Bình. Với bề dày lịch sử và kinh nghiệm thi đấu các giải trong và ngoài nước của mình, FC Mai Tộc đang ngày một lớn mạnh và dần trở thành một trong những đội bóng hàng đầu khu vực.</p>
                 <!-- Show team  -->
-                <div class="row members-list">
-                    <div class="column column-third text-center">
+                <div class="row">
+                    <div class=" column s-col-full mt-16 column-third text-center">
                         <p class="member-name">ST. Cuong Mai</p>
                         <img src="./assets/img/fc/cuongmai.jpg" alt="Image of FC" class="member-img">
                     </div>
-                    <div class="column column-third text-center">
+                    <div class=" column s-col-full mt-16 column-third text-center">
                         <p class="member-name">CB. Huy Mai</p>
                         <img src="./assets/img/fc/huy_n.jpg" alt="Image of FC" class="member-img">
                     </div>
-                    <div class="column column-third text-center">
+                    <div class=" column s-col-full mt-16 column-third text-center">
                         <p class="member-name">CM. Thang Mai</p>
                         <img src="./assets/img/fc/me.png" alt="Image of FC" class="member-img">
                     </div>
-                    <hr>
+                    <hr width="60%" size="1px" color="red" style="margin-left:auto; margin-right:auto"/>
 
-                    <div class="column column-third text-center">
-                        <p class="member-name">LB. Son Bui</p>
-                        <img src="./assets/img/fc/son.jpg" alt="Image of FC" class="member-img">
-                    </div>
-                    <div class="column column-third text-center">
+                    <div class=" column s-col-full mt-16 column-third text-center">
                         <p class="member-name">GK. Duong Mai</p>
                         <img src="./assets/img/fc/duong.jpg" alt="Image of FC" class="member-img">
                     </div>
-                    <div class="column column-third text-center">
+                    <div class=" column s-col-full mt-16 column-third text-center">
+                        <p class="member-name">LB. Son Bui</p>
+                        <img src="./assets/img/fc/son.jpg" alt="Image of FC" class="member-img">
+                    </div>
+                    <div class=" column s-col-full mt-16 column-third text-center">
                         <p class="member-name">RM. Hieu Vu</p>
                         <img src="./assets/img/fc/hieu.jpg" alt="Image of FC" class="member-img">
                     </div>
-                    <hr>
+                    <hr width="60%" size="1px" color="green" style="margin-left:auto; margin-right:auto"/>
 
-                    <div class="column column-third text-center">
-                        <p class="member-name">LB. Mai Nguyen</p>
-                        <img src="./assets/img/fc/nguyen_n.jpg" alt="Image of FC" class="member-img">
-                    </div>
-                    <div class="column column-third text-center">
+                    <div class=" column s-col-full mt-16 column-third text-center">
                         <p class="member-name">RB. Nghia Mai</p>
                         <img src="./assets/img/fc/nghia.jpg" alt="Image of FC" class="member-img">
                     </div>
-                    <div class="column column-third text-center">
+                    <div class=" column s-col-full mt-16 column-third text-center">
+                        <p class="member-name">LB. Mai Nguyen</p>
+                        <img src="./assets/img/fc/nguyen_n.jpg" alt="Image of FC" class="member-img">
+                    </div>
+                    <div class=" column s-col-full mt-16 column-third text-center">
                         <p class="member-name">RW. Minh Duy</p>
                         <img src="./assets/img/fc/duy.jpg" alt="Image of FC" class="member-img">
                     </div>
-                    <hr>
-                    
-                    <div class="member-column-half">
-                        <div class="column text-center">
+                    <hr width="70%" size="1px" color="blue" style="margin-left:auto; margin-right:auto"/>
+                
+                    <div class=" column s-col-full mt-16 member-column-half">
+                        <div class=" column s-col-full mt-16 column-third text-center">
                             <p class="member-name">LM. Van Cuong</p>
                             <img src="./assets/img/fc/van cuong.jpg" alt="Image of FC" class="member-img">
                         </div>
-                        <div class="column text-center">
+                        <div class=" column s-col-full mt-16 column-third text-center">
                             <p class="member-name">ST. Chinh Mai</p>
                             <img src="./assets/img/fc/chinh mai.jpg" alt="Image of FC" class="member-img">
                         </div>
@@ -124,7 +132,7 @@
 
                     <!-- Places -->
                     <div class="row places-list">
-                        <div class="column column-third place-item">
+                        <div class="column column-third s-col-full mt-16">
                             <img src="./assets/img/places/chelsea.jpg" alt="old trafford stadium" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Lon Don - England</h3>
@@ -133,7 +141,7 @@
                                 <button class="btn js-buy-tickets">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="column column-third place-item">
+                        <div class="column column-third s-col-full mt-16">
                             <img src="./assets/img/places/old traford.jpg" alt="old trafford stadium" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Manchester - England</h3>
@@ -142,7 +150,7 @@
                                 <button class="btn js-buy-tickets">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="column column-third place-item">
+                        <div class="column column-third s-col-full mt-16">
                             <img src="./assets/img/places/bernabeu.jpg" alt="old trafford stadium" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Madrid - Spain</h3>
@@ -279,6 +287,38 @@
         modalContainer.addEventListener('click', function (event) {
             event.stopPropagation()
         })
+
+
+        // show menu in Mobile
+            var header = document.getElementById('header');
+            var mobileMenu = document.querySelector('.mobile-menu-btn');
+            var headerHeight = header.clientHeight;
+            mobileMenu.onclick = function(){
+                var isClosed = header.clientHeight;
+                if (isClosed === headerHeight) {
+                    header.style.height = 'auto';
+                    document.getElementById('slider').style.opacity='0.8';
+                } else {
+                    header.style.height = null;
+                    document.getElementById('slider').style.opacity='1';
+                }
+            }
+        
+        // Tự động đóng khi chọn menu
+            var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+            for (var i = 0; i < menuItems.length; i++) {
+                var menuItem = menuItems[i];
+
+                menuItem.onclick = function() {
+                    var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                    if (!isParentMenu) {
+                        // Nếu menuItem chứa 1 element có chị em liền kề và anh chị em liền kề đó có chứa thằng subnav thì nó là menu cha
+                        header.style.height = null;
+                    } else {
+                        event.preventDefault();
+                    }
+                }
+            }
     </script>
 </body>
 </html>

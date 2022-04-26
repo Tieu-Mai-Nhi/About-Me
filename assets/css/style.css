@@ -17,7 +17,7 @@ html {
 }
 
 #main {
-
+    overflow: hidden; /*bất cứ đối tượng của thẻ con chui ra khỏi thẻ cha thì sẽ ẩn đi */
 }
 
 .row {
@@ -154,20 +154,37 @@ html {
     font-size: 12px;
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
     cursor: pointer;
 }
 
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     line-height: 46px;
-   
 }
 
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+
 #header .search-btn:hover {
-    background-color: #f44336
+    background-color: #f44336;
 }
 
 
@@ -207,9 +224,12 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px 0;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
     
 }
 
@@ -237,15 +257,15 @@ html {
 }
 
 #content .member-name {
-    margin-top: 44px;
+    margin-top: 32px;
     font-size: 15px;
 }
 
 #content .member-img {
     margin-top: 15px;
     margin-bottom: 24px;
-    width: 252px;
-    height: 270px;
+    width: 100%;
+    height: auto;
     border-radius: 4px;
 }
 
@@ -297,7 +317,8 @@ html {
 
 /* Places */
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
+    margin-bottom: 32px;
 }
 
 .place-img {
